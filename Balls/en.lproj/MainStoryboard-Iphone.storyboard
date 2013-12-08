@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="4">
+            <objects>
+                <viewController id="2" customClass="GameViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="qb4-lk-6Ou">
+                                <rect key="frame" x="345" y="-19" width="209" height="357"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="m3z-Tc-AuE">
+                                        <rect key="frame" x="60" y="141" width="60" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="13"/>
+                                        <state key="normal" title="Normal" backgroundImage="slice_02@2x.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" backgroundImage="slice_s02@2x.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="slice_s02@2x.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startNormalGame:" destination="2" eventType="touchUpInside" id="JdR-Ll-bwJ"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="blue_on_tile@2x.png" id="cFu-Oh-nLr" customClass="ProposalBall">
+                                        <rect key="frame" x="64" y="199" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="orange_on_tile@2x.png" id="gkf-F8-UpZ" customClass="ProposalBall">
+                                        <rect key="frame" x="148" y="199" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="score@2x.png" id="kaJ-Aw-EyV">
+                                        <rect key="frame" x="42" y="46" width="66" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Top scores:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bQZ-J2-4xJ">
+                                        <rect key="frame" x="1" y="233" width="178" height="19"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Score Board:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iYI-Bl-mSI">
+                                        <rect key="frame" x="1" y="20" width="178" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="1526 pkt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wfV-h7-oa5">
+                                        <rect key="frame" x="33" y="49" width="84" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="10"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TO6-Om-gFZ">
+                                        <rect key="frame" x="119" y="141" width="60" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="13"/>
+                                        <state key="normal" title="Hard" backgroundImage="slice_03@2x.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" backgroundImage="slice_s03@2x.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="slice_s03@2x.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startHardGame:" destination="2" eventType="touchUpInside" id="cAh-7Z-8l0"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="red_on_tile@2x.png" id="Awf-O3-iAL" customClass="ProposalBall">
+                                        <rect key="frame" x="36" y="199" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="yellow_on_tile@2x.png" id="m4k-P5-iLp" customClass="ProposalBall">
+                                        <rect key="frame" x="92" y="199" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="topscores@2x.png" id="o2O-tT-pPx">
+                                        <rect key="frame" x="-4" y="228" width="185" height="91"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YqB-yq-h0m">
+                                        <rect key="frame" x="1" y="290" width="170" height="14"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="11"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7Gd-Fx-iPa" userLabel="Label">
+                                        <rect key="frame" x="1" y="254" width="170" height="14"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="11"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="x65-xz-9Uh">
+                                        <rect key="frame" x="1" y="266" width="170" height="14"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="11"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Next Ball Coming:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="U1t-lf-9xG">
+                                        <rect key="frame" x="1" y="171" width="178" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BLa-2x-OVd">
+                                        <rect key="frame" x="1" y="278" width="170" height="14"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="11"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="okW-ds-FWW">
+                                        <rect key="frame" x="1" y="302" width="170" height="14"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="11"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ehW-Go-e7j">
+                                        <rect key="frame" x="1" y="141" width="60" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                                        <state key="normal" title="Easy" backgroundImage="slice_01@2x.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" backgroundImage="slice_s01@2x.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="slice_s01@2x.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startEasyGame:" destination="2" eventType="touchUpInside" id="QqF-DH-TdX"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="green_on_tile@2x.png" id="rE3-MW-pny" customClass="ProposalBall">
+                                        <rect key="frame" x="9" y="199" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="purple_on_tile@2x.png" id="uO5-zd-yaJ" customClass="ProposalBall">
+                                        <rect key="frame" x="120" y="199" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="New game with level:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="em0-af-bQj">
+                                        <rect key="frame" x="1" y="107" width="178" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.74901962280273438" green="0.74901962280273438" blue="0.74901962280273438" alpha="1" colorSpace="deviceRGB"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="easyGame" destination="ehW-Go-e7j" id="CPG-T4-ZN2"/>
+                        <outlet property="hardGame" destination="TO6-Om-gFZ" id="Tgj-cG-tpE"/>
+                        <outlet property="mainView" destination="qb4-lk-6Ou" id="n5D-JP-KPt"/>
+                        <outlet property="normalGame" destination="m3z-Tc-AuE" id="ynw-HK-rEO"/>
+                        <outlet property="proposalColorFive" destination="uO5-zd-yaJ" id="745-PE-aCK"/>
+                        <outlet property="proposalColorFour" destination="m4k-P5-iLp" id="w7Z-vw-Hza"/>
+                        <outlet property="proposalColorOne" destination="rE3-MW-pny" id="xRw-wh-3R4"/>
+                        <outlet property="proposalColorSix" destination="gkf-F8-UpZ" id="zdI-fT-Gyp"/>
+                        <outlet property="proposalColorThree" destination="cFu-Oh-nLr" id="6HY-sv-n8W"/>
+                        <outlet property="proposalColorTwo" destination="Awf-O3-iAL" id="dzV-S4-I1o"/>
+                        <outlet property="scorePointLabel" destination="wfV-h7-oa5" id="nBH-Gy-TPm"/>
+                        <outlet property="topScoresFive" destination="okW-ds-FWW" id="2uD-AU-74Q"/>
+                        <outlet property="topScoresFour" destination="YqB-yq-h0m" id="9dD-hq-dd4"/>
+                        <outlet property="topScoresOne" destination="7Gd-Fx-iPa" id="tdd-ts-jbJ"/>
+                        <outlet property="topScoresThree" destination="BLa-2x-OVd" id="tJo-z9-YVA"/>
+                        <outlet property="topScoresTwo" destination="x65-xz-9Uh" id="JED-YA-Ehg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-267" y="-131"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blue_on_tile@2x.png" width="120" height="120"/>
+        <image name="green_on_tile@2x.png" width="120" height="120"/>
+        <image name="orange_on_tile@2x.png" width="120" height="120"/>
+        <image name="purple_on_tile@2x.png" width="120" height="120"/>
+        <image name="red_on_tile@2x.png" width="120" height="120"/>
+        <image name="score@2x.png" width="300" height="300"/>
+        <image name="slice_01@2x.png" width="199" height="120"/>
+        <image name="slice_02@2x.png" width="196" height="120"/>
+        <image name="slice_03@2x.png" width="205" height="120"/>
+        <image name="slice_s01@2x.png" width="199" height="120"/>
+        <image name="slice_s02@2x.png" width="196" height="120"/>
+        <image name="slice_s03@2x.png" width="205" height="120"/>
+        <image name="topscores@2x.png" width="400" height="400"/>
+        <image name="yellow_on_tile@2x.png" width="120" height="120"/>
+    </resources>
+    <classes>
+        <class className="GameViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GameViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="startEasyGame:"/>
+                <relationship kind="action" name="startHardGame:"/>
+                <relationship kind="action" name="startNormalGame:"/>
+                <relationship kind="outlet" name="easyGame" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="hardGame" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="mainView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="normalGame" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="proposalColorFive" candidateClass="ProposalBall"/>
+                <relationship kind="outlet" name="proposalColorFour" candidateClass="ProposalBall"/>
+                <relationship kind="outlet" name="proposalColorOne" candidateClass="ProposalBall"/>
+                <relationship kind="outlet" name="proposalColorSix" candidateClass="ProposalBall"/>
+                <relationship kind="outlet" name="proposalColorThree" candidateClass="ProposalBall"/>
+                <relationship kind="outlet" name="proposalColorTwo" candidateClass="ProposalBall"/>
+                <relationship kind="outlet" name="scorePointLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="topScoresFive" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="topScoresFour" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="topScoresOne" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="topScoresThree" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="topScoresTwo" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="ProposalBall" superclassName="UIImageView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ProposalBall.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
